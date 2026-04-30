@@ -226,8 +226,8 @@ footer p{font-size:13px;color:var(--text3)}
           <div class="stat-label">Information Science<br>CU Boulder</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number">2×</div>
-          <div class="stat-label">Portfolio Projects<br>SQL · Excel · Power BI</div>
+          <div class="stat-number">7</div>
+          <div class="stat-label">Portfolio Projects<br>SQL · Excel · Power BI · Python</div>
         </div>
         <div class="stat-card">
           <div class="stat-number">Eagle</div>
@@ -331,6 +331,106 @@ footer p{font-size:13px;color:var(--text3)}
       </div>
     </div>
 
+    <!-- Project 3: SQL -->
+    <div class="project-card reveal" onclick="openModal('modal-sql')">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0c1a2e 0%,#080c08 100%)">
+        <div class="project-thumb-icon">🏥</div>
+        <div class="project-thumb-overlay"></div>
+      </div>
+      <div class="project-body">
+        <p class="project-tag">SQL · Database Analysis</p>
+        <h3>Hospital Database Analysis</h3>
+        <p>Advanced SQL queries across a relational hospital database to extract physician workload trends, patient risk classifications, and specialty-based performance comparisons.</p>
+        <div class="project-tools">
+          <span class="tool-badge">SQL</span>
+          <span class="tool-badge">JOINs</span>
+          <span class="tool-badge">Subqueries</span>
+          <span class="tool-badge">CASE Statements</span>
+        </div>
+        <div class="project-arrow">View project details →</div>
+      </div>
+    </div>
+
+    <!-- Project 4: Big Data -->
+    <div class="project-card reveal" onclick="openModal('modal-bigdata')">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#1a0e24 0%,#080c08 100%)">
+        <div class="project-thumb-icon">🤖</div>
+        <div class="project-thumb-overlay"></div>
+      </div>
+      <div class="project-body">
+        <p class="project-tag">Big Data · Sentiment Analysis</p>
+        <h3>AI Relationships on Reddit — Sentiment Analysis</h3>
+        <p>Big data analysis exploring how sentiment toward AI relationships has evolved across Reddit, using VADER sentiment scoring, BigQuery SQL, and Tableau visualizations.</p>
+        <div class="project-tools">
+          <span class="tool-badge">BigQuery SQL</span>
+          <span class="tool-badge">Tableau</span>
+          <span class="tool-badge">VADER</span>
+          <span class="tool-badge">NLP</span>
+        </div>
+        <div class="project-arrow">View project details →</div>
+      </div>
+    </div>
+
+    <!-- Project 5: NPS -->
+    <div class="project-card reveal" onclick="openModal('modal-nps')">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0e2218 0%,#080c08 100%)">
+        <div class="project-thumb-icon">🏞️</div>
+        <div class="project-thumb-overlay"></div>
+      </div>
+      <div class="project-body">
+        <p class="project-tag">Python · Elasticsearch</p>
+        <h3>National Parks Web Scraping & Search Engine</h3>
+        <p>Built a full-text search engine for National Park Service content by scraping NPS.gov, ingesting data into Elasticsearch with custom analyzers, and running advanced queries.</p>
+        <div class="project-tools">
+          <span class="tool-badge">Python</span>
+          <span class="tool-badge">Web Scraping</span>
+          <span class="tool-badge">Elasticsearch</span>
+          <span class="tool-badge">NLP</span>
+        </div>
+        <div class="project-arrow">View project details →</div>
+      </div>
+    </div>
+
+    <!-- Project 6: CU Basketball -->
+    <div class="project-card reveal" onclick="openModal('modal-basketball')">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#1a1a0e 0%,#080c08 100%)">
+        <div class="project-thumb-icon">🏀</div>
+        <div class="project-thumb-overlay"></div>
+      </div>
+      <div class="project-body">
+        <p class="project-tag">Data Journey · Stakeholder Research</p>
+        <h3>CU Women's Basketball Data Journey</h3>
+        <p>Conducted stakeholder interviews with 5 CU Women's Basketball staff members and mapped 30+ data touchpoints across scheduling, budgeting, and recruitment workflows.</p>
+        <div class="project-tools">
+          <span class="tool-badge">Interviews</span>
+          <span class="tool-badge">Miro</span>
+          <span class="tool-badge">Data Mapping</span>
+          <span class="tool-badge">Stakeholder Analysis</span>
+        </div>
+        <div class="project-arrow">View project details →</div>
+      </div>
+    </div>
+
+    <!-- Project 7: Survey -->
+    <div class="project-card reveal" onclick="openModal('modal-survey')">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#1e140e 0%,#080c08 100%)">
+        <div class="project-thumb-icon">📋</div>
+        <div class="project-thumb-overlay"></div>
+      </div>
+      <div class="project-body">
+        <p class="project-tag">Tableau · Survey Research</p>
+        <h3>AI in Media — Student Perception Survey</h3>
+        <p>Designed, distributed, and analyzed a survey on CU Boulder students' perceptions of AI-generated media content, with findings visualized in Tableau dashboards.</p>
+        <div class="project-tools">
+          <span class="tool-badge">Tableau</span>
+          <span class="tool-badge">Survey Design</span>
+          <span class="tool-badge">Data Analysis</span>
+          <span class="tool-badge">Presentation</span>
+        </div>
+        <div class="project-arrow">View project details →</div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -424,6 +524,237 @@ footer p{font-size:13px;color:var(--text3)}
       </div>
         <div style="margin-top:24px;">
           <a href="CORESSEL_CODY_PROJECT_2_3402.pdf" class="btn btn-primary" download>Download Project PDF ↓</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SQL Modal -->
+<div class="modal-overlay" id="modal-sql">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-sql')">✕</button>
+    <div class="modal-header">
+      <p class="project-tag">SQL · Database Analysis</p>
+      <h2>Hospital Database Analysis</h2>
+      <p>Advanced SQL querying on a relational hospital database to uncover physician workload patterns and patient risk factors.</p>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <h4>The Goal</h4>
+        <p>Write advanced SQL queries against a hospital database to answer real-world clinical questions: which doctors are overloaded relative to their specialty peers, how workload varies by month, and which patients should be flagged for additional monitoring based on age, allergies, and admission frequency.</p>
+      </div>
+      <div class="modal-section">
+        <h4>What I Contributed</h4>
+        <ul>
+          <li>Engineered three advanced SQL queries joining multiple tables (doctors, patients, admissions) to extract physician workload trends and specialty-based comparisons</li>
+          <li>Built a correlated subquery to compare each doctor's patient count against the average for their specialty — identifying above-average workload physicians</li>
+          <li>Used strftime to extract month from admission dates and group workload by time period</li>
+          <li>Designed a multi-condition patient risk classification system using nested CASE statements, flagging patients by age group, allergy status, and admission frequency</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h4>Skills Gained</h4>
+        <ul>
+          <li>Advanced SQL: multi-table JOINs, correlated subqueries, HAVING clauses, CASE statements</li>
+          <li>Analytical thinking — translating clinical questions into structured queries</li>
+          <li>Risk classification logic — defining meaningful patient risk tiers from raw data</li>
+          <li>Query optimization and readability</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h4>Project Preview</h4>
+        <div class="modal-visual">
+          <p>🏥 Add screenshots of your SQL queries and results here</p>
+          <p style="font-size:12px;color:var(--text3)">Replace with images from your SQL project document</p>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="Hospital_SQL_Analysis.zip" class="btn btn-primary" download>Download Full Project ↓</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Big Data Modal -->
+<div class="modal-overlay" id="modal-bigdata">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-bigdata')">✕</button>
+    <div class="modal-header">
+      <p class="project-tag">Big Data · Sentiment Analysis</p>
+      <h2>AI Relationships on Reddit — Sentiment Analysis</h2>
+      <p>A big data analysis exploring how public sentiment toward AI relationships has evolved across Reddit communities.</p>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <h4>The Goal</h4>
+        <p>Investigate the big question: "How has sentiment towards relationships with AI changed over time?" by analyzing Reddit posts across multiple subreddits (ChatGPT, Replika, Grok, and others) using VADER sentiment analysis, BigQuery SQL, and Tableau visualizations.</p>
+      </div>
+      <div class="modal-section">
+        <h4>What I Contributed</h4>
+        <ul>
+          <li>Queried large-scale Reddit datasets in Google BigQuery using SQL with REGEXP_CONTAINS for keyword filtering across AI-related subreddits</li>
+          <li>Applied VADER sentiment scoring to analyze compound sentiment across thousands of posts, comparing subreddits and time periods</li>
+          <li>Discovered key insight: sentiment dropped sharply in 2023 when Replika removed romantic conversation features, causing user backlash</li>
+          <li>Built Tableau visualizations showing sentiment trends, subreddit comparisons, and upvote ratio distributions</li>
+          <li>Analyzed engagement patterns — finding that AI companion-specific subreddits had near-perfect upvote ratios compared to general AI subreddits</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h4>Skills Gained</h4>
+        <ul>
+          <li>Big data querying with Google BigQuery SQL on large Reddit datasets</li>
+          <li>Natural Language Processing — VADER sentiment analysis at scale</li>
+          <li>Tableau dashboard design for communicating NLP findings</li>
+          <li>Research methodology — formulating big questions and sub-questions, then validating with data</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h4>Project Preview</h4>
+        <div class="modal-visual">
+          <p>🤖 Add screenshots of your Tableau dashboards or presentation slides here</p>
+          <p style="font-size:12px;color:var(--text3)">Replace with images from your Big Data project</p>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="Big_Data_AI_Sentiment.zip" class="btn btn-primary" download>Download Full Project ↓</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NPS Modal -->
+<div class="modal-overlay" id="modal-nps">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-nps')">✕</button>
+    <div class="modal-header">
+      <p class="project-tag">Python · Elasticsearch</p>
+      <h2>National Parks Web Scraping & Search Engine</h2>
+      <p>A full-text search engine for National Park Service content, built from scratch with Python web scraping and Elasticsearch.</p>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <h4>The Goal</h4>
+        <p>Build an end-to-end information retrieval system: scrape content from NPS.gov, design a custom text analyzer, ingest documents into Elasticsearch, and execute advanced search queries including match, phrase match, wildcard, fuzzy, and boolean queries.</p>
+      </div>
+      <div class="modal-section">
+        <h4>What I Contributed</h4>
+        <ul>
+          <li>Built a Python web scraper to collect park descriptions, activities, states, and metadata from the National Park Service website</li>
+          <li>Designed a custom Elasticsearch analyzer with stemming and stop-word filtering for optimized full-text search</li>
+          <li>Ingested scraped documents into an Elasticsearch index with proper field mappings</li>
+          <li>Wrote advanced queries: match, match_phrase, wildcard (e.g., all parks in states starting with "C"), fuzzy search, and compound boolean queries</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h4>Skills Gained</h4>
+        <ul>
+          <li>Python web scraping — HTTP requests, HTML parsing, data extraction pipelines</li>
+          <li>Elasticsearch — index design, custom analyzers, full-text search, query DSL</li>
+          <li>Information retrieval concepts — stemming, tokenization, relevance scoring</li>
+          <li>End-to-end data pipeline: scrape → transform → index → query</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h4>Project Preview</h4>
+        <div class="modal-visual">
+          <p>🏞️ Add screenshots of your Jupyter notebooks or query results here</p>
+          <p style="font-size:12px;color:var(--text3)">Replace with images from your NPS project</p>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="NPS_Web_Scraping.zip" class="btn btn-primary" download>Download Full Project ↓</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Basketball Modal -->
+<div class="modal-overlay" id="modal-basketball">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-basketball')">✕</button>
+    <div class="modal-header">
+      <p class="project-tag">Data Journey · Stakeholder Research</p>
+      <h2>CU Women's Basketball Data Journey</h2>
+      <p>Stakeholder-driven data journey mapping for CU Boulder's Women's Basketball program.</p>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <h4>The Goal</h4>
+        <p>Map the end-to-end information ecosystem of CU Women's Basketball by conducting stakeholder interviews and building multi-layered data journey maps — identifying how data flows across scheduling, budgeting, and recruitment, and where friction points exist.</p>
+      </div>
+      <div class="modal-section">
+        <h4>What I Contributed</h4>
+        <ul>
+          <li>Conducted interviews with five CU Women's Basketball staff members including the Head Coach, Director of Player Development, and Strength & Conditioning Coach</li>
+          <li>Constructed multi-layered data journey maps in Miro capturing 30+ data touchpoints across micro, meso, and macro organizational levels</li>
+          <li>Identified key friction points in travel logistics, legal contracts, and athlete academic scheduling</li>
+          <li>Presented findings and recommendations to stakeholders</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h4>Skills Gained</h4>
+        <ul>
+          <li>Stakeholder interviewing — preparing questions, conducting sessions, extracting insights</li>
+          <li>Data journey mapping — visualizing information flows across organizational layers</li>
+          <li>Systems thinking — understanding how data moves between departments and identifying bottlenecks</li>
+          <li>Professional communication — presenting technical findings to non-technical stakeholders</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h4>Project Preview</h4>
+        <div class="modal-visual">
+          <p>🏀 Add screenshots of your data journey maps or presentation here</p>
+          <p style="font-size:12px;color:var(--text3)">Replace with images from your Basketball project</p>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="CU_Womens_Basketball.zip" class="btn btn-primary" download>Download Full Project ↓</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Survey Modal -->
+<div class="modal-overlay" id="modal-survey">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-survey')">✕</button>
+    <div class="modal-header">
+      <p class="project-tag">Tableau · Survey Research</p>
+      <h2>AI in Media — Student Perception Survey</h2>
+      <p>A team research project surveying CU Boulder students on their perceptions of AI-generated content in media.</p>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <h4>The Goal</h4>
+        <p>Design and conduct a survey to gauge CU Boulder students' perceptions of AI in media — whether they associate positive or negative feelings with AI-generated content, and whether they believe they can distinguish AI content from human-created content on social media.</p>
+      </div>
+      <div class="modal-section">
+        <h4>What I Contributed</h4>
+        <ul>
+          <li>Collaborated with a 6-person team to design survey questions, define research methodology, and create an analysis plan</li>
+          <li>Built Tableau dashboards to visualize survey responses, identifying patterns in student attitudes toward AI in different media contexts</li>
+          <li>Analyzed results to find conflicting information between students' stated confidence in detecting AI content and their actual ability to do so</li>
+          <li>Co-presented findings in a case study presentation with data-backed recommendations</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h4>Skills Gained</h4>
+        <ul>
+          <li>Survey design — question formulation, bias avoidance, response analysis planning</li>
+          <li>Tableau — building interactive dashboards from survey data</li>
+          <li>Team collaboration — coordinating analysis across 6 team members</li>
+          <li>Research presentation — communicating findings to an audience with visual support</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h4>Project Preview</h4>
+        <div class="modal-visual">
+          <p>📋 Add screenshots of your Tableau dashboards or presentation here</p>
+          <p style="font-size:12px;color:var(--text3)">Replace with images from your Survey project</p>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="Survey_AI_Media.zip" class="btn btn-primary" download>Download Full Project ↓</a>
         </div>
       </div>
     </div>
