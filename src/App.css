@@ -1,0 +1,4 @@
+/* App.css is intentionally empty.
+   Global styles + tokens now live in src/index.css.
+   As we build each real component (Nav, Hero, ...) it will get
+   its own co-located .css file. This file can be deleted later. */
